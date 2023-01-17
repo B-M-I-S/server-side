@@ -11,7 +11,7 @@ import org.hibernate.service.ServiceRegistry;
 /**
  * Session factory for smis configures hibernate configuration file
  * 
- * @author Aphrodice Rwagaju
+ * @author BMIS
  * 
  */
 public class SmisSessionFactory {
