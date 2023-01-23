@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>rw.rca</groupId>
-    <artifactId>smis</artifactId>
+    <artifactId>Bmis</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>smis</name>
@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-    <description>School Management Information System is a Software Developed by Aphrodice Rwagaju for the Purpose of Teaching Software Development and Design in RCA</description>
+    <description>Business Management Information System is a Software Developed by BMIS team for the Purpose of Teaching Software Development and Design in RCA</description>
     <build>
         <finalName>smis##0.1</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -240,14 +240,14 @@
     </dependencies>
     <developers>
         <developer>
-            <name>Aphrodice Rwagaju</name>
-            <email>aphrorwa@gmail.com</email>
+            <name>Bmis team</name>
+            <email>bmis@gmail.com</email>
             <roles>
-                <role>Software Programming Instructor</role>
+                <role>Business Management Software Information System Team</role>
             </roles>
         </developer>
     </developers>
-    <inceptionYear>2022</inceptionYear>
+    <inceptionYear>2023</inceptionYear>
     <organization>
         <name>Rwanda Coding Academy</name>
         <url>https://www.rca.ac.rw</url>
