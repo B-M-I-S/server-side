@@ -6,19 +6,17 @@ import javax.persistence.*;
 @Entity()
 @Table(name="employee")
 public class Employee extends Person {
-
     @ManyToOne
     @JoinColumn(name="organizationId", nullable = false)
     private Organization organization;
+    @ManyToOne
+    @JoinColumn(name = "addressId")
+    private Address address;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String role;
-
     private int salary;
-
-
 
     public Organization getOrganization() {
         return organization;
@@ -31,7 +29,6 @@ public class Employee extends Person {
     public Employee(){}
 
     public Employee(String name, char gender, Organization organization) {
-
         this.setName(name);
         this.setGender(gender);
         this.organization = organization;

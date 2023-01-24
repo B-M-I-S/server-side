@@ -7,8 +7,6 @@ import java.util.*;
 @Table(name="supplier")
 public class Supplier extends Person {
 
-
-
     @ManyToOne
     @JoinColumn(name = "organizationId")
     private Organization organization;
@@ -20,6 +18,9 @@ public class Supplier extends Person {
     @Id
     @GeneratedValue
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "addressId")
+    private Address address;
 
 
 
@@ -48,9 +49,7 @@ public class Supplier extends Person {
     public Supplier(String name, Address address, Organization organization) {
         super();
         this.setName(name);
-
         this.organization = organization;
-
     }
 
 }

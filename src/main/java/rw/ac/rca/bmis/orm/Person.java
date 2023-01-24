@@ -10,13 +10,16 @@ public class Person implements  Serializable{
     @GeneratedValue(strategy = GenerationType.TABLE )
     private int id;
     private String name;
+
+    private String email;
+    private String phoneNumber;
+
+
     private Date dob;
     private char gender;
 
 
-    @ManyToOne
-    @JoinColumn(name = "addressId")
-    private Address address;
+
     public Person() {
 
     }

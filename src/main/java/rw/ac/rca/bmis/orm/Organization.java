@@ -1,6 +1,7 @@
 package rw.ac.rca.bmis.orm;
 
 
+import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -18,10 +19,20 @@ public class Organization {
     @OneToMany(mappedBy = "organization")
     private Set<Supplier> supplier;
 
-    private String owner;
+    @OneToMany(mappedBy = "organization")
+    private Set<Product>  products;
+
+    private Date created_at;
+
+    @ManyToOne
+    @JoinColumn(name = "addressId")
+    private Address address;
+
+
+    @OneToOne
+    private Employee owner;
 
     public Organization(Set<Employee> employee) {
-
         this.employee = employee;
     }
 
@@ -45,17 +56,19 @@ public class Organization {
         this.supplier = supplier;
     }
 
-    public String getOwner() {
+    public Employee getOwner() {
         return owner;
     }
-    public void setOwner(String owner) {
+    public void setOwner(Employee owner) {
         this.owner = owner;
     }
 
-    public Organization(String name,String owner) {
-        this.name = name;
-        this.owner = owner;
 
+    public Organization(String name, Employee owner, Date created_at, Address address){
+        this.name =  name;
+        this.owner =  owner;
+        this.created_at = created_at;
+        this.address = address;
     }
 
 

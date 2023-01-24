@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/util/BmisSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rw/ac/rca/bmis/orm/Address.java" afterDir="false" />
+    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="Reinitialized project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,24 @@
       <workItem from="1674477802603" duration="6182000" />
       <workItem from="1674484210987" duration="3037000" />
       <workItem from="1674487595460" duration="3079000" />
+      <workItem from="1674499125109" duration="1544000" />
+      <workItem from="1674548940360" duration="5135000" />
     </task>
+    <task id="LOCAL-00001" summary="Reinitialized project">
+      <created>1674499206186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674499206186</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Reinitialized project">
+      <created>1674499401203</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674499401203</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reinitialized project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reinitialized project" />
   </component>
 </project>
