@@ -3,13 +3,14 @@ package rw.ac.rca.bmis.orm;
 import javax.persistence.*;
 
 
-@Entity()
+@Entity
 @Table(name="employee")
 public class Employee extends Person {
 
     @ManyToOne
     @JoinColumn(name="organizationId", nullable = false)
     private Organization organization;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,6 +19,9 @@ public class Employee extends Person {
 
     private int salary;
 
+    @ManyToOne
+    @JoinColumn(name = "addressId")
+    private Address address;
 
 
     public Organization getOrganization() {

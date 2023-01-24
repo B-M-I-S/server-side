@@ -13,6 +13,7 @@ public class Product {
 
     @ManyToMany(mappedBy = "products")
     private Set<Supplier> suppliers;
+
     @Id
     @GeneratedValue
     private Long id;

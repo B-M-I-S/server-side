@@ -8,6 +8,9 @@ import java.util.*;
 public class Supplier extends Person {
 
 
+    @ManyToOne
+    @JoinColumn(name = "addressId")
+    private Address address;
 
     @ManyToOne
     @JoinColumn(name = "organizationId")

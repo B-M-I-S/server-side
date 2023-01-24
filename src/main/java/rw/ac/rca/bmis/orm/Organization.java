@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Organization {
     private String name;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "organization")
     private Set<Employee> employee;

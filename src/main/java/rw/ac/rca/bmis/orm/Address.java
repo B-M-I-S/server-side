@@ -5,20 +5,23 @@ import java.io.Serializable;
 import java.util.*;
 
 
-@Entity()
+@Entity
 @Table(name = "address")
 public class Address {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int addressId;
     private String name;
     private String streetAddress;
     private String postalCode;
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "address")
     private Set<Supplier> suppliers;
+
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "address")
     private Set<Employee> employees;
-    @Id
-    @GeneratedValue()
-    private Long id;
+
 
     public Set<Supplier> getSuppliers() {
         return suppliers;

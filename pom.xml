@@ -13,7 +13,7 @@
     </properties>
     <description>Business Management Information System is a Software Developed by BMIS team for the Purpose of Teaching Software Development and Design in RCA</description>
     <build>
-        <finalName>smis##0.1</finalName>
+        <finalName>bmis##0.1</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <resources>
@@ -65,10 +65,10 @@
                     <compilerVersion>${java.version}</compilerVersion>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.5</version>
-            </plugin>
+<!--            <plugin>-->
+<!--                <artifactId>maven-resources-plugin</artifactId>-->
+<!--                <version>2.5</version>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat-maven-plugin</artifactId>
@@ -203,7 +203,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.30</version>
+            <version>5.1.36</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>

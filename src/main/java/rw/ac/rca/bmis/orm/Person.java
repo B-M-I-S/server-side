@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 public class Person implements  Serializable{
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
     private Date dob;
