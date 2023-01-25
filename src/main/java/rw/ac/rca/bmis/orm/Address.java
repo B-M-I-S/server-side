@@ -8,9 +8,8 @@ import java.util.*;
 @Entity
 @Table(name = "address")
 public class Address {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int addressId;
     private String name;
     private String streetAddress;

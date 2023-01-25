@@ -14,6 +14,11 @@ public class Product {
     @ManyToMany(mappedBy = "products")
     private Set<Supplier> suppliers;
 
+
+    @ManyToOne()
+    @JoinColumn(name = "organizationId")
+    private Organization organization;
+
     @Id
     @GeneratedValue
     private Long id;

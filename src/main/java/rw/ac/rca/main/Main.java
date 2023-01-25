@@ -4,21 +4,14 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import rw.ac.rca.bmis.orm.*;
+import rw.ac.rca.bmis.orm.Address;
+
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Address myAddress=new Address("Rwanda","Westernn","Nyabihu");
-        Organization organization = new Organization("high tech","Hirwa eddy");
-        Supplier supplier = new Supplier("Josse Mukamana",myAddress,organization);
-        Product   product = new Product("Computer machine","Mac");
-        Employee employee = new Employee("Cynthia Umwari",'F',organization);
-
-
-
-
+        Address add= new Address("Kigali","Pobox 205","KK205");
 
         Configuration config = new Configuration();
         config.configure("hibernate.cfg.xml");
@@ -27,17 +20,10 @@ public class Main {
         SessionFactory factory = config.buildSessionFactory();
         Session session = factory.openSession();
         System.out.println(" Beginning transaction...........");
-
-
         Transaction transaction=null;
         try {
             transaction = session.beginTransaction();
-            session.saveOrUpdate(myAddress);
-            session.saveOrUpdate(organization);
-            session.saveOrUpdate(supplier);
-            session.saveOrUpdate(product);
-            session.saveOrUpdate(employee);
-
+            session.saveOrUpdate(add);
             transaction.commit();
 
         }catch (Exception e){
