@@ -16,7 +16,7 @@ public class RetrieveProducts {
                 Session session=factory.openSession();
 
                 System.out.println("Fetching object using get:");
-                Product p = (Product) session.get(Product.class,2);
+                Product p = (Product) session.get(Product.class,(long)2);
 
                 System.out.println("brand:"+p.getBrand());
                 System.out.println("Name:"+p.getProductName());
