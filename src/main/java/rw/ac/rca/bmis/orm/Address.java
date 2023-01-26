@@ -13,20 +13,11 @@ public class Address {
     private String postalCode;
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "address")
-    private Set<Supplier> suppliers;
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "address")
-    private Set<Employee> employees;
+    private Set<User> employees;
     @Id
     @GeneratedValue()
     private Long id;
 
-    public Set<Supplier> getSuppliers() {
-        return suppliers;
-    }
-
-    public void setSuppliers(Set<Supplier> suppliers) {
-        this.suppliers = suppliers;
-    }
 
 
     public Address(String name, String streetAddress, String postalCode) {

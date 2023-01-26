@@ -36,6 +36,7 @@
         <!-- Models -->
         <mapping class="rw.ac.rca.bmis.orm.Address" />
         <mapping class="rw.ac.rca.bmis.orm.Employee" />
+        <mapping class="rw.ac.rca.bmis.orm.User" />
         <mapping class="rw.ac.rca.bmis.orm.Organization" />
         <mapping class="rw.ac.rca.bmis.orm.Supplier" />
         <mapping class="rw.ac.rca.bmis.orm.Product" />

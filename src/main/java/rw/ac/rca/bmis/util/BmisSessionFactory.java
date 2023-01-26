@@ -1,4 +1,4 @@
-package rw.ac.rca.util;
+package rw.ac.rca.bmis.util;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -14,8 +14,6 @@ public class BmisSessionFactory {
     private static Configuration configuration;
     private static ServiceRegistry serviceRegistry;
 
-    private BmisSessionFactory() {
-    }
 
     /**
      * gets instance

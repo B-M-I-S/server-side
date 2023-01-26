@@ -11,9 +11,6 @@ public class Product {
     private String productName;
     private String brand;
 
-    @ManyToMany(mappedBy = "products")
-    private Set<Supplier> suppliers;
-
 
     @ManyToOne()
     @JoinColumn(name = "organizationId")
@@ -50,11 +47,6 @@ public class Product {
         this.brand = brand;
     }
 
-
-
-    public Set<Supplier> getSuppliers() {return suppliers;}
-
-    public void setSuppliers(Set<Supplier> suppliers) {this.suppliers = suppliers;}
 
 
     public Product(String productName, String brand) {

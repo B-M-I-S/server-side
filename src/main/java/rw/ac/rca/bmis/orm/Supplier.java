@@ -11,17 +11,9 @@ public class Supplier extends Person {
     @JoinColumn(name = "organizationId")
     private Organization organization;
 
-
-    @ManyToMany(cascade = {CascadeType.ALL})
-    @JoinTable(name = "Supplier", joinColumns = {@JoinColumn(name = "supplierId")}, inverseJoinColumns = {@JoinColumn(name = "productId")})
-    private Set<Product> products;
     @Id
     @GeneratedValue
     private Long id;
-    @ManyToOne
-    @JoinColumn(name = "addressId")
-    private Address address;
-
 
 
     public Organization getOrganization() {
@@ -32,13 +24,6 @@ public class Supplier extends Person {
         this.organization = organization;
     }
 
-    public Set<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(Set<Product> products) {
-        this.products = products;
-    }
 
 
     public Supplier() {
