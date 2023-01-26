@@ -10,11 +10,7 @@ import java.util.Scanner;
 
 @Controller
 public class UserController {
-    private UserService userService;
-
-    public void setUserService(UserService us){
-        this.userService = us;
-    }
+     UserDaoImpl userServices = new UserDaoImpl();
 
     public void saveUser() throws ParseException {
         User user = new User();
@@ -45,16 +41,16 @@ public class UserController {
             user.setPhoneNumber(scanner.nextLine());
             System.out.println("Select your gender: ");
             user.setGender(scanner.nextLine());
-            UserDaoImpl userServices = new UserDaoImpl();
-            userServices.addUser(user, address);
 
+            this.userServices.addUser(user, address);
             System.out.println("=================THANK YOU FOR JOINING OUR COMMUNITY=============");
         }else if(action == 1){
             System.out.println("=================LOGIN TO YOUR ACCOUNT==================");
             System.out.println("Enter your email: ");
             String email = scanner.nextLine();
+            System.out.println("Enter your password: ");
             String password = scanner.nextLine();
-
+            userServices.login(email, password);
         }
 
     }
