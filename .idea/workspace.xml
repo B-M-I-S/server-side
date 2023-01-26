@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="Reinitialized project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Admin.java" afterDir="false" />
+    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="additional codes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmisApp/CreateProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmisApp/RetrieveProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/main/Main.java" afterDir="false" />
@@ -33,15 +32,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2KjAp3dwVZt1gkR0KWlLotM1jkk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

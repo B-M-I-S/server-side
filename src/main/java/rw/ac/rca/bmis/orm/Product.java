@@ -15,6 +15,14 @@ public class Product {
     private Set<Supplier> suppliers;
 
 
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
+    }
+
     @ManyToOne()
     @JoinColumn(name = "organizationId")
     private Organization organization;

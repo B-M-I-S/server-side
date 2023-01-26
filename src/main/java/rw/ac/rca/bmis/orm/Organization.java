@@ -11,7 +11,7 @@ public class Organization {
     private String name;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int organizationId;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "organization")
     private Set<Employee> employee;
 

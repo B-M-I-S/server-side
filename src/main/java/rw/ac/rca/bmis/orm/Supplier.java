@@ -18,11 +18,10 @@ public class Supplier extends Person {
     @Id
     @GeneratedValue
     private Long id;
+
     @ManyToOne
     @JoinColumn(name = "addressId")
     private Address address;
-
-
 
     public Organization getOrganization() {
         return organization;
@@ -46,7 +45,7 @@ public class Supplier extends Person {
     }
 
 
-    public Supplier(String name, Address address, Organization organization) {
+    public Supplier(String name,Organization organization) {
         super();
         this.setName(name);
         this.organization = organization;
