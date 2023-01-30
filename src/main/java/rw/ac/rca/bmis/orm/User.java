@@ -2,6 +2,7 @@ package rw.ac.rca.bmis.orm;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 
 @Entity(name = "user")
@@ -14,6 +15,17 @@ public class User extends  Person{
     public String getCategory() {
         return category;
     }
+
+    public Set<Organization> getOrganizations() {
+        return organizations;
+    }
+
+    public void setOrganizations(Set<Organization> organizations) {
+        this.organizations = organizations;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "owner")
+    private Set<Organization> organizations;
 
     public void setCategory(String category) {
         this.category = category;

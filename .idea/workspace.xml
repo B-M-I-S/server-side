@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="completed login">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/OrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/SupplierController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/GenericDao.java" afterDir="false" />
+    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="Initialized other controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/OrganizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/OrganizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -97,7 +100,7 @@
       <workItem from="1674756346328" duration="4774000" />
       <workItem from="1674803917423" duration="10345000" />
       <workItem from="1674844492403" duration="2949000" />
-      <workItem from="1675064153280" duration="3714000" />
+      <workItem from="1675064153280" duration="13717000" />
     </task>
     <task id="LOCAL-00001" summary="Reinitialized project">
       <created>1674499206186</created>
@@ -134,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674759000152</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initialized other controllers">
+      <created>1675073241407</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675073241407</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initialized other controllers">
+      <created>1675073281946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675073281946</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +173,7 @@
     <MESSAGE value="completed mapping and connection" />
     <MESSAGE value="modified mapping and created user" />
     <MESSAGE value="completed login" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed login" />
+    <MESSAGE value="Initialized other controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialized other controllers" />
   </component>
 </project>

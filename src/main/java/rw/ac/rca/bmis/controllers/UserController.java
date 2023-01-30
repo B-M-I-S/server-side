@@ -46,6 +46,8 @@ public class UserController {
             this.addressDao.create(address);
            this.userDao.create(user);
             System.out.println("=================THANK YOU FOR JOINING OUR COMMUNITY=============");
+            OrganizationController oc = new OrganizationController();
+            oc.createOrganization(user);
         }else if(action == 1){
             System.out.println("=================LOGIN TO YOUR ACCOUNT==================");
             System.out.println("Enter your email: ");
@@ -54,7 +56,6 @@ public class UserController {
             String password = scanner.nextLine();
             this.userDaoImpl.login(email, password);
         }
-
     }
 
 

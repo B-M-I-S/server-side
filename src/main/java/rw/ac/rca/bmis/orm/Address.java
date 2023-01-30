@@ -13,7 +13,7 @@ public class Address {
     private String postalCode;
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "address")
-    private Set<User> employees;
+    private Set<User> users;
     @Id
     @GeneratedValue()
     private Long id;

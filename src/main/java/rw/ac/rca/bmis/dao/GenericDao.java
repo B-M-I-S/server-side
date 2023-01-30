@@ -24,7 +24,7 @@ public class GenericDao<T> {
         transaction.commit();
     }
 
-    public T get(int id) {
+    public T get(Long id) {
         Session session = sessionFactory.openSession();
         T t = (T) session.get(GenericDao.class , id);
         session.close();

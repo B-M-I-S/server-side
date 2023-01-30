@@ -12,6 +12,14 @@ public class Product {
     private String brand;
 
 
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
+    }
+
     @ManyToOne()
     @JoinColumn(name = "organizationId")
     private Organization organization;

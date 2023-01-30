@@ -9,7 +9,7 @@ import java.util.List;
 public interface UserDao {
 
     public User login(String email, String password);
-
+    public void dashboard(User user);
 }
 
 

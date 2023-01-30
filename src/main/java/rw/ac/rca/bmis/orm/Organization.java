@@ -24,13 +24,33 @@ public class Organization {
 
     private Date created_at;
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @ManyToOne
     @JoinColumn(name = "addressId")
     private Address address;
 
+    public int getEmployeesNumber() {
+        return EmployeesNumber;
+    }
 
-    @OneToOne
-    private Employee owner;
+    public void setEmployeesNumber(int employeesNumber) {
+        EmployeesNumber = employeesNumber;
+    }
+
+    private int EmployeesNumber;
+
+
+
+    @ManyToOne
+    @JoinColumn(name = "owner")
+    private User owner;
 
     public Organization(Set<Employee> employee) {
         this.employee = employee;
@@ -56,15 +76,15 @@ public class Organization {
         this.supplier = supplier;
     }
 
-    public Employee getOwner() {
+    public User getOwner() {
         return owner;
     }
-    public void setOwner(Employee owner) {
+    public void setOwner(User owner) {
         this.owner = owner;
     }
 
 
-    public Organization(String name, Employee owner, Date created_at, Address address){
+    public Organization(String name, User owner, Date created_at, Address address){
         this.name =  name;
         this.owner =  owner;
         this.created_at = created_at;
