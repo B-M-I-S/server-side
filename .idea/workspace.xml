@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="modified mapping and created user">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dto/UserDto.java" afterDir="false" />
+    <list default="true" id="e7d2cbf0-7e92-4a42-9643-ef3c792a3d7a" name="Changes" comment="completed login">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/OrganizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/orm/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rw/ac/rca/bmis/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +25,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -52,7 +63,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alice/Documents/Java_intro/smis&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alice/Documents/Java_intro/Bmis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -61,6 +72,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;fb7c21ef0e5e679710271d35a8f0fb99&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,7 +94,10 @@
       <workItem from="1674548940360" duration="6189000" />
       <workItem from="1674718464498" duration="17570000" />
       <workItem from="1674739646295" duration="8941000" />
-      <workItem from="1674756346328" duration="2292000" />
+      <workItem from="1674756346328" duration="4774000" />
+      <workItem from="1674803917423" duration="10345000" />
+      <workItem from="1674844492403" duration="2949000" />
+      <workItem from="1675064153280" duration="3714000" />
     </task>
     <task id="LOCAL-00001" summary="Reinitialized project">
       <created>1674499206186</created>
@@ -108,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674749889596</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="completed login">
+      <created>1674759000152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674759000152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +155,7 @@
     <MESSAGE value="Reinitialized project" />
     <MESSAGE value="completed mapping and connection" />
     <MESSAGE value="modified mapping and created user" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified mapping and created user" />
+    <MESSAGE value="completed login" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed login" />
   </component>
 </project>
